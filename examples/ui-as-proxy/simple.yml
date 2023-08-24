@@ -10,7 +10,7 @@ services:
   ui:
     image: joxit/docker-registry-ui:latest
     ports:
-      - 80:80
+      - 8080:80
     environment:
       - REGISTRY_TITLE=My Private Docker Registry
       - NGINX_PROXY_PASS_URL=http://registry:5000
